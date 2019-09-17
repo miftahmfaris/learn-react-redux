@@ -2,7 +2,7 @@ const initialValues = {
     count: 0
 };
 
-const reducer = (state = initialValues, action) => {
+const count = (state = initialValues, action) => {
     console.log(action);
     
     switch (action.type) {
@@ -15,4 +15,4 @@ const reducer = (state = initialValues, action) => {
     }
 };
 
-export default reducer;
+export default count;

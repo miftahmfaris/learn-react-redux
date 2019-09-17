@@ -1,15 +1,12 @@
 import React from "react";
 import "./App.css";
-import { createStore } from "redux";
 import { Provider } from "react-redux";
-import reducer from "./reducers";
+import store from "./redux/store";
 import Counter from "./components/Counter";
 
-const stores = createStore(reducer);
-
-const App = props => {
+const App = () => {
     return (
-        <Provider store={stores}>
+        <Provider store={store}>
             <div>
                 <p>I am the actual App</p>
                 <Counter />
